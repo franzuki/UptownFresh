@@ -1674,7 +1674,11 @@ CREATE TABLE `tbl_user` (
 
 INSERT INTO `tbl_user` (`id`, `full_name`, `email`, `phone`, `password`, `photo`, `role`, `status`) VALUES
 (1, 'Administrator', 'admin@mail.com', '7777777777', 'd00f5d5217896fb7fd601412cb890830', 'user-1.png', 'Super Admin', 'Active'),
-(2, 'Christine', 'christine@mail.com', '4444444444', '81dc9bdb52d04dc20036dbd8313ed055', 'user-13.jpg', 'Admin', 'Active');
+(2, 'Francis', 'nzukifrancis20@gmail.com', '0701723886', 'db78b06a48d4da96416bf28e548c8011', 'user-13.jpg', 'Super Admin', 'Active')
+(3, 'Tobias', 'tobiasmutuku98@gmail.com', '0741877729', '266d05ff8ce286814687f595f824abc3', 'user-13.jpg', 'Super Admin', 'Active')
+(4, 'Christine', 'eryouma003@gmail.com', '0795062462', 'fc660223e39bb68a599a6fa1af1c7099', 'user-13.jpg', 'Super Admin', 'Active');
+
+
 
 -- --------------------------------------------------------
 
