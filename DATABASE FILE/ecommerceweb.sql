@@ -536,7 +536,7 @@ CREATE TABLE `tbl_language` (
 --
 
 INSERT INTO `tbl_language` (`lang_id`, `lang_name`, `lang_value`) VALUES
-(1, 'Currency', '$'),
+(1, 'Currency', 'Ksh'),
 (2, 'Search Product', 'Search Product'),
 (3, 'Search', 'Search'),
 (4, 'Submit', 'Submit'),
@@ -571,7 +571,7 @@ INSERT INTO `tbl_language` (`lang_id`, `lang_name`, `lang_value`) VALUES
 (33, 'Payment Section', 'Payment Section'),
 (34, 'Select Payment Method', 'Select Payment Method'),
 (35, 'Select a Method', 'Select a Method'),
-(36, 'PayPal', 'PayPal'),
+(36, 'Mpesa', 'Mpesa'),
 (37, 'Stripe', 'Stripe'),
 (38, 'Bank Deposit', 'Bank Deposit'),
 (39, 'Card Number', 'Card Number'),
@@ -1495,53 +1495,33 @@ CREATE TABLE `tbl_size` (
 --
 
 INSERT INTO `tbl_size` (`size_id`, `size_name`) VALUES
-(1, 'XS'),
-(2, 'S'),
-(3, 'M'),
-(4, 'L'),
-(5, 'XL'),
-(6, 'XXL'),
-(7, '3XL'),
-(8, '31'),
-(9, '32'),
-(10, '33'),
-(11, '34'),
-(12, '35'),
-(13, '36'),
-(14, '37'),
-(15, '38'),
-(16, '39'),
-(17, '40'),
-(18, '41'),
-(19, '42'),
-(20, '43'),
-(21, '44'),
-(22, '45'),
-(23, '46'),
-(24, '47'),
-(25, '48'),
+(1, 'small bag'),
+(2, 'Big bag'),
+(3, 'Medium bag'),
+(4, 'Large bag'),
+(5, 'XL bag'),
+(6, 'XXL bag'),
+(7, '3XL bag'),
+(8, '1 pack'),
+(9, '2 packs'),
+(10, '3 packs'),
+(11, '4 packs'),
+(12, '5 packs'),
+(13, '6 packs'),
+(14, '7 packs'),
+(15, '8 packs'),
+(16, '9 packs'),
+(17, '10 packs'),
+(18, '11 packs'),
+(19, '12 packs'),
+(20, '13 packs'),
+(21, '14 packs'),
+(22, '15 packs'),
+(23, '16 packs'),
+(24, '17 packs'),
+(25, '18 packs'),
 (26, 'Free Size'),
-(27, 'One Size for All'),
-(28, '10'),
-(29, '12 Months'),
-(30, '2T'),
-(31, '3T'),
-(32, '4T'),
-(33, '5T'),
-(34, '6 Years'),
-(35, '7 Years'),
-(36, '8 Years'),
-(37, '10 Years'),
-(38, '12 Years'),
-(39, '14 Years'),
-(40, '256 GB'),
-(41, '128 GB'),
-(42, '14 Plus'),
-(43, '16 Plus'),
-(44, '18 Plus'),
-(45, '20 Plus'),
-(46, '22 Plus'),
-(47, '24 Plus');
+(27, 'One Size for All');
 
 -- --------------------------------------------------------
 
@@ -1589,19 +1569,11 @@ INSERT INTO `tbl_social` (`social_id`, `social_name`, `social_url`, `social_icon
 (1, 'Facebook', 'https://www.facebook.com/#', 'fa fa-facebook'),
 (2, 'Twitter', 'https://www.twitter.com/#', 'fa fa-twitter'),
 (3, 'LinkedIn', '', 'fa fa-linkedin'),
-(4, 'Google Plus', '', 'fa fa-google-plus'),
 (5, 'Pinterest', '', 'fa fa-pinterest'),
 (6, 'YouTube', 'https://www.youtube.com/#', 'fa fa-youtube'),
 (7, 'Instagram', 'https://www.instagram.com/#', 'fa fa-instagram'),
-(8, 'Tumblr', '', 'fa fa-tumblr'),
-(9, 'Flickr', '', 'fa fa-flickr'),
-(10, 'Reddit', '', 'fa fa-reddit'),
 (11, 'Snapchat', '', 'fa fa-snapchat'),
-(12, 'WhatsApp', 'https://www.whatsapp.com/#', 'fa fa-whatsapp'),
-(13, 'Quora', '', 'fa fa-quora'),
-(14, 'StumbleUpon', '', 'fa fa-stumbleupon'),
-(15, 'Delicious', '', 'fa fa-delicious'),
-(16, 'Digg', '', 'fa fa-digg');
+(12, 'WhatsApp', 'https://www.whatsapp.com/#', 'fa fa-whatsapp');
 
 -- --------------------------------------------------------
 
@@ -1647,11 +1619,11 @@ CREATE TABLE `tbl_top_category` (
 --
 
 INSERT INTO `tbl_top_category` (`tcat_id`, `tcat_name`, `show_on_menu`) VALUES
-(1, 'Men', 1),
-(2, 'Women', 1),
-(3, 'Kids', 1),
-(4, 'Electronics', 1),
-(5, 'Health and Household', 1);
+(1, 'Fruits', 1),
+(2, 'Vegetables', 1),
+(3, 'Legumes', 1),
+(4, 'Cereals', 1),
+(5, 'Animal Products', 1);
 
 -- --------------------------------------------------------
 
