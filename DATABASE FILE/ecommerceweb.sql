@@ -486,7 +486,7 @@ CREATE TABLE `tbl_language` (
 --
 -- Dumping data for table `tbl_language`
 --
-
+ 
 INSERT INTO `tbl_language` (`lang_id`, `lang_name`, `lang_value`) VALUES
 (1, 'Currency', 'Ksh'),
 (2, 'Search Product', 'Search Product'),
