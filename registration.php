@@ -168,7 +168,7 @@ if (isset($_POST['form1'])) {
                    "Content-Type: text/html; charset=ISO-8859-1\r\n";
         
         // Sending Email
-        mail($to, $subject, $message, $headers);
+        // mail($to, $subject, $message, $headers);
 
         unset($_POST['cust_name']);
         unset($_POST['cust_cname']);
