@@ -417,84 +417,36 @@ CREATE TABLE `tbl_end_category` (
 --
 
 INSERT INTO `tbl_end_category` (`ecat_id`, `ecat_name`, `mcat_id`) VALUES
-(1, 'Headwear ', 1),
-(2, 'Sunglasses', 1),
-(3, 'Watches', 1),
-(4, 'Sandals', 2),
-(5, 'Boots', 2),
-(6, 'Tops', 3),
-(7, 'T-Shirt', 3),
-(8, 'Watches', 4),
-(9, 'Sunglasses', 4),
-(11, 'Sports Shoes', 2),
-(12, 'Sandals', 6),
-(13, 'Flat Shoes', 6),
-(14, 'Hoodies', 7),
-(15, 'Coats & Jackets', 7),
-(16, 'Pants', 8),
-(17, 'Jeans', 8),
-(18, 'Joggers', 8),
-(19, 'Shorts', 8),
-(20, 'T-shirts', 9),
-(21, 'Casual Shirts', 9),
-(22, 'Formal Shirts', 9),
-(23, 'Polo Shirts', 9),
-(24, 'Vests', 9),
-(25, 'Casual Shoes', 2),
-(26, 'Boys', 10),
-(27, 'Girls', 10),
-(28, 'Boys', 11),
-(29, 'Girls', 11),
-(30, 'Boys', 12),
-(31, 'Girls', 12),
+(1, 'Oranges ', 1),
+(2, 'Watermelon', 1),
+(3, 'Avocado', 1),
+(6, 'Sagga', 3),
+(26, 'Cowpeas', 10),
+(27, 'Soybeans', 10),
+(28, 'Common Beans', 11),
+(29, 'Groundnuts', 11),
+(30, 'Peas', 12),
+(31, 'Katumani', 12),
 (32, 'Dresses', 7),
-(33, 'Tops', 7),
-(34, 'T-Shirts & Vests', 7),
-(35, 'Pants & Leggings', 7),
-(36, 'Sportswear', 7),
-(37, 'Plus Size Clothing', 7),
-(38, 'Socks & Hosiery', 7),
-(39, 'Fragrance', 3),
-(40, 'Skincare', 3),
-(41, 'Hair Care', 3),
-(42, 'Jewellery', 4),
-(43, 'Eyes Care', 3),
-(44, 'Lips', 3),
-(45, 'Face Care', 3),
-(46, 'Gift Sets', 3),
-(47, 'Scarves & Headwear', 4),
-(48, 'Multipacks', 4),
-(49, 'Other Accessories', 4),
-(50, 'Pumps', 6),
-(51, 'Sneakers', 6),
-(52, 'Sports Shoes', 6),
-(53, 'Boots', 6),
-(54, 'Comfort Shoes', 6),
-(55, 'Slippers & Casual Shoes', 6),
-(56, 'Formal Shoes', 2),
-(57, 'Belts', 1),
-(58, 'Multipacks', 1),
-(59, 'Other Accessories', 1),
-(60, 'Bags', 4),
-(61, 'Cell Phone and Accessories', 14),
-(62, 'Headphones', 14),
-(63, 'Security and Surveillance', 14),
-(64, 'Television and Video', 14),
-(65, 'GPS and Navigation', 14),
-(66, 'Home Audio', 14),
-(67, 'Computer Components', 15),
-(68, 'Computers and Tablets', 15),
-(69, 'Laptop Accessories', 15),
-(70, 'Printer and Monitors', 15),
-(71, 'External Components', 15),
-(72, 'Networking Products', 15),
-(73, 'Medical Supplies and Equipment', 16),
-(74, 'Oral Care', 16),
-(75, 'Vision Care', 16),
-(76, 'Vitamins and Dietary Supplements', 16),
-(77, 'Baby and Child Care', 17),
-(78, 'Household Supplies', 17),
-(79, 'Stationery and Gift Wrapping Supplies', 17);
+(33, 'Cabbage', 7),
+(39, 'Sukuma', 3),
+(40, 'Managu', 3),
+(41, 'Spinach', 3),
+(43, 'Terere', 3),
+(44, 'Broccolli', 3),
+(57, 'Blueberries', 1),
+(58, 'Lemons', 1),
+(59, 'strawberries', 1),
+(61, 'Maize', 14),
+(62, 'Wheat', 14),
+(63, 'Rice', 14),
+(64, 'Millet', 14),
+(65, 'Sorghum', 14),
+(66, 'Barley', 14),
+(73, 'Meat', 16),
+(74, 'Eggs', 16),
+(75, 'Milk', 16),
+(76, 'Pork', 16);
 
 -- --------------------------------------------------------
 
@@ -717,22 +669,13 @@ CREATE TABLE `tbl_mid_category` (
 --
 
 INSERT INTO `tbl_mid_category` (`mcat_id`, `mcat_name`, `tcat_id`) VALUES
-(1, 'Men Accessories', 1),
-(2, 'Men\'s Shoes', 1),
-(3, 'Beauty Products', 2),
-(4, 'Accessories', 2),
-(6, 'Shoes', 2),
-(7, 'Clothing', 2),
-(8, 'Bottoms', 1),
-(9, 'T-shirts & Shirts', 1),
-(10, 'Clothing', 3),
-(11, 'Shoes', 3),
-(12, 'Accessories', 3),
+(1, 'Mangoes', 1),
+(3, 'Vegetables', 2),
+(10, 'Legumes', 3),
+(11, '', 3),
+(12, '', 3),
 (14, 'Electronic Items', 4),
-(15, 'Computers', 4),
-(16, 'Health', 5),
-(17, 'Household', 5);
-
+(16, 'Health', 5);
 -- --------------------------------------------------------
 
 --
@@ -1437,7 +1380,7 @@ CREATE TABLE `tbl_settings` (
 --
 
 INSERT INTO `tbl_settings` (`id`, `logo`, `favicon`, `footer_about`, `footer_copyright`, `contact_address`, `contact_email`, `contact_phone`, `contact_fax`, `contact_map_iframe`, `receive_email`, `receive_email_subject`, `receive_email_thank_you_message`, `forget_password_message`, `total_recent_post_footer`, `total_popular_post_footer`, `total_recent_post_sidebar`, `total_popular_post_sidebar`, `total_featured_product_home`, `total_latest_product_home`, `total_popular_product_home`, `meta_title_home`, `meta_keyword_home`, `meta_description_home`, `banner_login`, `banner_registration`, `banner_forget_password`, `banner_reset_password`, `banner_search`, `banner_cart`, `banner_checkout`, `banner_product_category`, `banner_blog`, `cta_title`, `cta_content`, `cta_read_more_text`, `cta_read_more_url`, `cta_photo`, `featured_product_title`, `featured_product_subtitle`, `latest_product_title`, `latest_product_subtitle`, `popular_product_title`, `popular_product_subtitle`, `testimonial_title`, `testimonial_subtitle`, `testimonial_photo`, `blog_title`, `blog_subtitle`, `newsletter_text`, `paypal_email`, `stripe_public_key`, `stripe_secret_key`, `bank_detail`, `before_head`, `after_body`, `before_body`, `home_service_on_off`, `home_welcome_on_off`, `home_featured_product_on_off`, `home_latest_product_on_off`, `home_popular_product_on_off`, `home_testimonial_on_off`, `home_blog_on_off`, `newsletter_on_off`, `ads_above_welcome_on_off`, `ads_above_featured_product_on_off`, `ads_above_latest_product_on_off`, `ads_above_popular_product_on_off`, `ads_above_testimonial_on_off`, `ads_category_sidebar_on_off`) VALUES
-(1, 'logo.png', 'favicon.png', '<p>Lorem ipsum dolor sit amet, omnis signiferumque in mei, mei ex enim concludaturque. Senserit salutandi euripidis no per, modus maiestatis scribentur est an.Â Ea suas pertinax has.</p>\r\n', 'Copyright Â© 2022 - Ecommerce Website PHP - Developed By Hammad Hassan', '93 Simpson Avenue\r\nHarrisburg, PA', 'support@ecommercephp.com', '+001 10 101 0010', '', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.020958405712!2d-84.39261378514685!3d39.151504939531584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841acfb8da30203%3A0x193175e741781f21!2s4293%20Simpson%20Ave%2C%20Cincinnati%2C%20OH%2045227%2C%20USA!5e0!3m2!1sen!2snp!4v1647796779407!5m2!1sen!2snp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', 'support@ecommercephp.com', 'Visitor Email Message from Ecommerce Site PHP', 'Thank you for sending email. We will contact you shortly.', 'A confirmation link is sent to your email address. You will get the password reset information in there.', 4, 4, 5, 5, 5, 6, 8, 'Ecommerce PHP', 'online fashion store, garments shop, online garments', 'ecommerce php project with mysql database', 'banner_login.jpg', 'banner_registration.jpg', 'banner_forget_password.jpg', 'banner_reset_password.jpg', 'banner_search.jpg', 'banner_cart.jpg', 'banner_checkout.jpg', 'banner_product_category.jpg', 'banner_blog.jpg', 'Welcome To Our Ecommerce Website', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, \r\nat usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. ', 'Read More', '#', 'cta.jpg', 'Featured Products', 'Our list on Top Featured Products', 'Latest Products', 'Our list of recently added products', 'Popular Products', 'Popular products based on customer\'s choice', 'Testimonials', 'See what our clients tell about us', 'testimonial.jpg', 'Latest Blog', 'See all our latest articles and news from below', 'Sign-up to our newsletter for latest promotions and discounts.', 'admin@ecom.com', 'pk_test_0SwMWadgu8DwmEcPdUPRsZ7b', 'sk_test_TFcsLJ7xxUtpALbDo1L5c1PN', 'Bank Name: WestView Bank\r\nAccount Number: CA100270589600\r\nBranch Name: CA Branch\r\nCountry: USA', '', '<div id=\"fb-root\"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = \"//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=323620764400430\";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, \'script\', \'facebook-jssdk\'));</script>', '<!--Start of Tawk.to Script-->\r\n<script type=\"text/javascript\">\r\nvar Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();\r\n(function(){\r\nvar s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];\r\ns1.async=true;\r\ns1.src=\'https://embed.tawk.to/5ae370d7227d3d7edc24cb96/default\';\r\ns1.charset=\'UTF-8\';\r\ns1.setAttribute(\'crossorigin\',\'*\');\r\ns0.parentNode.insertBefore(s1,s0);\r\n})();\r\n</script>\r\n<!--End of Tawk.to Script-->', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+(1, 'logo.png', 'favicon.png', '<p></p>\r\n', 'Copyright Â© 2022 - UptownFresh - Developed By UptownFresh Team', '536 Egerton\r\nNakuru, Kenya', 'uptownfresh1@gmail.com', '+254 741 877 729', '', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.936999138552!2d35.92854073560812!3d-0.3719493456792924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182987e88ed4a835%3A0xd17ab41538bef8f6!2sEgerton%20University%20-%20Njoro!5e0!3m2!1sen!2ske!4v1658147041930!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>', 'uptownfresh1@gmail.com', 'Visitor Email Message from UptownFresh Team', 'Thank you for sending email. We will contact you shortly.', 'A confirmation link is sent to your email address. You will get the password reset information in there.', 4, 4, 5, 5, 5, 6, 8, 'UptownFresh Team', 'Online agricultural Store', 'ecommerce project with mysql database', 'banner_login.jpg', 'banner_registration.jpg', 'banner_forget_password.jpg', 'banner_reset_password.jpg', 'banner_search.jpg', 'banner_cart.jpg', 'banner_checkout.jpg', 'banner_product_category.jpg', 'banner_blog.jpg', 'Welcome To Our Ecommerce Website', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, \r\nat usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. ', 'Read More', '#', 'cta.jpg', 'Featured Products', 'Our list on Top Featured Products', 'Latest Products', 'Our list of recently added products', 'Popular Products', 'Popular products based on customer\'s choice', 'Testimonials', 'See what our clients tell about us', 'testimonial.jpg', 'Latest Blog', 'See all our latest articles and news from below', 'Sign-up to our newsletter for latest promotions and discounts.', 'admin@ecom.com', 'pk_test_0SwMWadgu8DwmEcPdUPRsZ7b', 'sk_test_TFcsLJ7xxUtpALbDo1L5c1PN', 'Bank Name: WestView Bank\r\nAccount Number: CA100270589600\r\nBranch Name: CA Branch\r\nCountry: USA', '', '<div id=\"fb-root\"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = \"//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=323620764400430\";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, \'script\', \'facebook-jssdk\'));</script>', '<!--Start of Tawk.to Script-->\r\n<script type=\"text/javascript\">\r\nvar Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();\r\n(function(){\r\nvar s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];\r\ns1.async=true;\r\ns1.src=\'https://embed.tawk.to/5ae370d7227d3d7edc24cb96/default\';\r\ns1.charset=\'UTF-8\';\r\ns1.setAttribute(\'crossorigin\',\'*\');\r\ns0.parentNode.insertBefore(s1,s0);\r\n})();\r\n</script>\r\n<!--End of Tawk.to Script-->', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1544,9 +1487,9 @@ CREATE TABLE `tbl_slider` (
 --
 
 INSERT INTO `tbl_slider` (`id`, `photo`, `heading`, `content`, `button_text`, `button_url`, `position`) VALUES
-(1, 'slider-1.png', 'Welcome to Ecommerce PHP', 'Shop Online for Latest Women Accessories', 'View Women Accessories', 'product-category.php?id=4&type=mid-category', 'Center'),
-(2, 'slider-2.jpg', '50% Discount on All Products', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has.', 'Read More', '#', 'Center'),
-(3, 'slider-3.png', '24 Hours Customer Support', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has.', 'Read More', '#', 'Right');
+(1, 'slider-1.png', 'Welcome to Ecommerce PHP', 'Shop Online for Latest products in our categories', 'View Our Products', 'product-category.php?id=4&type=mid-category', 'Center'),
+(2, 'slider-2.jpg', '50% Discount on All Products', 'We offer Discount to our customers to motivate them. Its because of you we are here.', 'Read More', '#', 'Center'),
+(3, 'slider-3.png', '24 Hours Customer Support', 'We provide 24 hour customer support to our customer. We are here for you.', 'Read More', '#', 'Center');
 
 -- --------------------------------------------------------
 
