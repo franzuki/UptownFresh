@@ -6,16 +6,18 @@
 -- Generation Time: Mar 20, 2022 at 07:39 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
-
+DROP DATABASE IF EXISTS ecommerceweb;
+CREATE DATABASE ecommerceweb;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
-
+--
+--
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
+USE ecommerceweb;
 --
 -- Database: `ecommerceweb`
 --
@@ -1428,7 +1430,7 @@ CREATE TABLE `tbl_settings` (
   `ads_above_popular_product_on_off` int(1) NOT NULL,
   `ads_above_testimonial_on_off` int(1) NOT NULL,
   `ads_category_sidebar_on_off` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_settings`
@@ -1674,8 +1676,8 @@ CREATE TABLE `tbl_user` (
 
 INSERT INTO `tbl_user` (`id`, `full_name`, `email`, `phone`, `password`, `photo`, `role`, `status`) VALUES
 (1, 'Administrator', 'admin@mail.com', '7777777777', 'd00f5d5217896fb7fd601412cb890830', 'user-1.png', 'Super Admin', 'Active'),
-(2, 'Francis', 'nzukifrancis20@gmail.com', '0701723886', 'db78b06a48d4da96416bf28e548c8011', 'user-13.jpg', 'Super Admin', 'Active')
-(3, 'Tobias', 'tobiasmutuku98@gmail.com', '0741877729', '266d05ff8ce286814687f595f824abc3', 'user-13.jpg', 'Super Admin', 'Active')
+(2, 'Francis', 'nzukifrancis20@gmail.com', '0701723886', 'db78b06a48d4da96416bf28e548c8011', 'user-13.jpg', 'Super Admin', 'Active'),
+(3, 'Tobias', 'tobiasmutuku98@gmail.com', '0741877729', '266d05ff8ce286814687f595f824abc3', 'user-13.jpg', 'Super Admin', 'Active'),
 (4, 'Christine', 'eryouma003@gmail.com', '0795062462', 'fc660223e39bb68a599a6fa1af1c7099', 'user-13.jpg', 'Super Admin', 'Active');
 
 
