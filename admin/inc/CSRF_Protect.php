@@ -3,7 +3,6 @@
  * A simple CSRF class to protect forms against CSRF attacks. The class uses
  * PHP sessions for storage.
  * 
- * @author Raahul Seshadri
  *
  */
 class CSRF_Protect
